@@ -1,0 +1,16 @@
+{"timestamp": "2025-11-29T13:16:07.918588", "trace_id": "397a8acf-b521-40ac-bbc2-1f04385f51d8", "event_type": "request_start", "details": {"path": "/agent/metrics", "method": "GET"}}
+{"timestamp": "2025-11-29T13:16:07.922893", "trace_id": "a688a0f8-bcfb-4d8c-b604-1d93f9a2e62c", "event_type": "tool_call", "details": {"tool": "system_metrics", "action": "get", "args": {}}}
+{"timestamp": "2025-11-29T13:16:08.925199", "trace_id": "7d12a27c-7649-4352-9e62-6d2d93c03949", "event_type": "agent_chain_run", "details": {"metrics": {"cpu": 21.0, "memory": 83.4, "disk": 77.2}, "alerts": ["High Memory Usage"]}}
+{"timestamp": "2025-11-29T13:16:08.928774", "trace_id": "397a8acf-b521-40ac-bbc2-1f04385f51d8", "event_type": "request_end", "details": {"path": "/agent/metrics", "status": 200}}
+{"timestamp": "2025-11-29T13:28:03.419205", "trace_id": "27a3c47d-a07a-4dc3-9d6f-c5486e22cefe", "event_type": "request_start", "details": {"path": "/agent/metrics", "method": "GET"}}
+{"timestamp": "2025-11-29T13:28:03.421724", "trace_id": "034a6f8d-742d-4726-b008-7135b2230730", "event_type": "tool_call", "details": {"tool": "system_metrics", "action": "get", "args": {}}}
+{"timestamp": "2025-11-29T13:28:04.424064", "trace_id": "686c6abe-249d-40cc-9f4d-525a1880b801", "event_type": "agent_chain_run", "details": {"metrics": {"cpu": 25.1, "memory": 88.7, "disk": 77.2}, "alerts": ["High Memory Usage"]}}
+{"timestamp": "2025-11-29T13:28:04.425236", "trace_id": "27a3c47d-a07a-4dc3-9d6f-c5486e22cefe", "event_type": "request_end", "details": {"path": "/agent/metrics", "status": 200}}
+{"timestamp": "2025-11-29T13:38:57.471149", "trace_id": "990e6d88-b644-47ca-a726-f7f77f366913", "event_type": "request_start", "details": {"path": "/agent/metrics", "method": "GET"}}
+{"timestamp": "2025-11-29T13:38:57.477390", "trace_id": "d7348fb5-ea81-440e-9473-56b2290b1b88", "event_type": "tool_call", "details": {"tool": "system_metrics", "action": "get", "args": {}}}
+{"timestamp": "2025-11-29T13:38:58.485383", "trace_id": "3c97281f-ff9c-43d9-9f0c-06d174758dfd", "event_type": "agent_chain_run", "details": {"metrics": {"cpu": 86.9, "memory": 84.2, "disk": 77.2}, "alerts": ["High CPU Usage", "High Memory Usage"]}}
+{"timestamp": "2025-11-29T13:38:58.488382", "trace_id": "990e6d88-b644-47ca-a726-f7f77f366913", "event_type": "request_end", "details": {"path": "/agent/metrics", "status": 200}}
+{"timestamp": "2025-11-29T13:40:39.600052", "trace_id": "ed456bd2-c5d5-4bb0-912a-528a776e309c", "event_type": "request_start", "details": {"path": "/agent/metrics", "method": "GET"}}
+{"timestamp": "2025-11-29T13:40:39.602460", "trace_id": "13100772-4e6a-41c9-9b92-902bc395231c", "event_type": "tool_call", "details": {"tool": "system_metrics", "action": "get", "args": {}}}
+{"timestamp": "2025-11-29T13:40:40.604764", "trace_id": "a384e932-3e4e-479b-a3ac-396f90ae6b3b", "event_type": "agent_chain_run", "details": {"metrics": {"cpu": 26.0, "memory": 82.9, "disk": 77.2}, "alerts": ["High Memory Usage"]}}
+{"timestamp": "2025-11-29T13:40:40.605939", "trace_id": "ed456bd2-c5d5-4bb0-912a-528a776e309c", "event_type": "request_end", "details": {"path": "/agent/metrics", "status": 200}}
