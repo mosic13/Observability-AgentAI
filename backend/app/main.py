@@ -10,10 +10,15 @@ from backend.services.session_service import InMemorySessionService
 
 from backend.agents.long_running_agent import long_running_agent
 
+from backend.tools.google_search_tool import GoogleSearchTool # Google search
+
 # Request Tracing Middleware
 from backend.observability.logging_utils import log_event
 import uuid
 from fastapi import Request
+
+import os
+
 
 app = FastAPI(title="Observability AgentAI Backend")
 session_service = InMemorySessionService()
@@ -148,3 +153,24 @@ def resume_long_run(body: dict):
     session_id = body.get("session_id")
     session_service.set_flag(session_id, "paused", False)
     return {"status": "resumed"}
+
+
+@app.get("/logs")
+def get_logs():
+    log_path = os.path.join(os.getcwd(), "agent_logs.jsonl")
+
+    if not os.path.exists(log_path):
+        return {"logs": []}
+
+    with open(log_path, "r") as f:
+        lines = f.readlines()
+
+    # return last 200 lines for safety
+    return {"logs": [line.strip() for line in lines[-200:]]}
+
+
+@app.get("/tools/google_search")
+def google_search(query: str):
+    tool = GoogleSearchTool()
+    result = tool.search(query)
+    return {"query": query, "result": result}

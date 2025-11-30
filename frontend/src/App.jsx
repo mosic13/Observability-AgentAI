@@ -1,10 +1,9 @@
-import SystemMetrics from "./components/SystemMetrics";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
-    <div style={{ padding: "2rem" }}>
-      <h1>Observability AgentAI Dashboard</h1>
-      <SystemMetrics />
+    <div>
+      <Dashboard />
     </div>
   );
 }
