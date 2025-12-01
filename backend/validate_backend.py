@@ -104,24 +104,3 @@ else:
 
 print("\n=== Validation Complete ===\n")
 
-
-
-""" How to Run Validation Script
-Activate backend venv:
-cd C:\Users\Monali\AgentAi-Code\Observability-AgentAI
-.\venv\Scripts\activate
-
-Run backend:
-uvicorn backend.app.main:app --reload --port 8000
-
-In NEW Cursor Terminal tab:
-python backend/validate_backend.py
-
-Output:
-[PASS] Root endpoint reachable
-[PASS] Sequential Agent Chain
-[PASS] Parallel Agents
-[PASS] Loop Agent
-…
-[PASS] Observability Logs (JSONL)
-[PASS] Long-running Agent """

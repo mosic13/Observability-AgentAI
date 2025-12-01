@@ -1,0 +1,3 @@
+# Contributing Guide
+
+Thanks for your interest in contributing! ...
